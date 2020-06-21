@@ -30,7 +30,10 @@ sudo apt-get install -y virtualbox virtualbox-ext-pack
  sudo apt-get install -y conntrack
 
  #e. finally we are done with the installation and now start the minikube
- sudo minikube start --vm-driver=none
+// sudo minikube start --vm-driver=none
+//Add user to Docker Group
+sudo usermod -aG docker $USER
+minikube start --vm-driver=docker //docker driver
 
  #f. start the dashboard
  sudo minikube dashboard
