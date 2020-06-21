@@ -28,6 +28,11 @@ sudo apt-get install -y virtualbox virtualbox-ext-pack
 
  #d. install required component
  sudo apt-get install -y conntrack
+ 
+ ***---------------------------------------------------***
+                     install docker 
+               sudo apt instal docker.io
+ ***---------------------------------------------------***
 
  #e. finally we are done with the installation and now start the minikube
 // sudo minikube start --vm-driver=none
